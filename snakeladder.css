@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background: palevioletred;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  margin: 20px auto;
+  border: 2px solid black;
+  width: 500px;
+  height: 500px;
+}
+
+.cell {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: relative;
+}
+
+.player {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#dice {
+  margin: 20px;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
